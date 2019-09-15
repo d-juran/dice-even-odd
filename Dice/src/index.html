@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Even Odd</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">-
+</head>
+
+<body style="background-color:#1c1e1f">
+  
+  <div style="text-align: center; color: #00b8ff">
+    <h1>Even Odd Dice Game</h1>
+  </div>
+  <br>
+
+  <div style="text-align: center">
+    <p class="text-capitalize" style="font-size: x-large;color: #d600ff">Choose wisely</p>
+    <button type="submit" class="btn btn-primary" style="background-color:#00ff9f;color:#1c1e1f" onclick="App.betAndRoll(false);">Bet odd</button>
+    <button type="submit" class="btn btn-primary" style="background-color:#00ff9f;color:#1c1e1f" onclick="App.betAndRoll(true);">Bet even</button>
+  
+  <br><br><br>
+  <div style="text-align: center">
+    <div>
+      <p class="text-capitalize font-weight-bold" style="font-size: x-large;color: #d600ff">RESULTS </p>
+    </div>
+    <div>
+      <p id="result" class="text-capitalize font-weight-bold" style="font-size: x-large; color: #00ff9f;"></p>
+    </div>
+  
+  </br>
+  <div id="accountAddress" style="color: #001eff"></div><br>
+  </div>
+  <div><img src="/src/img/coin.gif" alt="Spinning coin"></div>
+</div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
